@@ -1,17 +1,16 @@
 {
-    "manifest_version": 3,
-    "name": "Precio del Dólar en Tiempo Real",
-    "version": "1.0",
-    "description": "Muestra el precio del dólar en la esquina superior derecha.",
-    "permissions": ["activeTab", "scripting"],
-    "action": {
-      "default_popup": "popup.html"
-    },
-    "background": {
-      "service_worker": "background.js"
-    },
-    "icons": {
-      "48": "icon.png"
-    }
+  "manifest_version": 3,
+  "name": "Precio del Dólar en Tiempo Real",
+  "version": "1.0",
+  "description": "Muestra el precio del dólar usando la API de Bluelytics.",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "48": "icon.png"
   }
-  
+}

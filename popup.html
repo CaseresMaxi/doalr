@@ -1,25 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Precio del Dólar</title>
     <style>
       body {
-        width: 320px;
-        height: 260px;
-        padding: 0;
-        margin: 0;
+        width: 250px;
         font-family: Arial, sans-serif;
+        padding: 10px;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
+      }
+      h1 {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+      .price {
+        font-size: 24px;
+        margin: 5px 0;
+      }
+      .label {
+        font-size: 14px;
+        color: #666;
       }
     </style>
   </head>
   <body>
-    <iframe 
-      style="width:320px;height:260px;border-radius:10px;box-shadow:2px 4px 4px rgb(0 0 0 / 25%);display:flex;justify-content:center;border:1px solid #bcbcbc"
-      src="https://dolarhoy.com/i/cotizaciones/dolar-blue" 
-      frameborder="0">
-    </iframe>
+    <h1>Precio del Dólar</h1>
+    <div>
+      <div id="blue_buy" class="price">Cargando...</div>
+      <div class="label">Dólar Blue (Compra)</div>
+    </div>
+    <div>
+      <div id="blue_sell" class="price">Cargando...</div>
+      <div class="label">Dólar Blue (Venta)</div>
+    </div>
+    <div>
+      <div id="oficial_buy" class="price">Cargando...</div>
+      <div class="label">Dólar Oficial (Compra)</div>
+    </div>
+    <div>
+      <div id="oficial_sell" class="price">Cargando...</div>
+      <div class="label">Dólar Oficial (Venta)</div>
+    </div>
+    <script src="popup.js"></script>
   </body>
 </html>
